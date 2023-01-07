@@ -2,12 +2,15 @@ package week3_collinTaks;
 
 public class Task1PrimeNumber {
     public static void main(String[] args) {
-        int a = 50;
-
+        int a = 150;
+        String result = "";
         for (int i = 1; i < a; i++) {
-            System.out.println("Is "+i+" a prime number? "+primeNumber(i));
+            //System.out.println("Is "+i+" a prime number? "+primeNumber(i));
+            if(primeNumber(i)==true){
+               result += i+ " ";
+            }
         }
-
+        System.out.println("Prime numbers: "+result);
     }
 
     public static boolean primeNumber(int a){
